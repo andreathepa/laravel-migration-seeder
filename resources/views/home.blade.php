@@ -14,8 +14,25 @@
 
 <body>
 
-    ciao
+    <div class="container">
+        <div class="row">
+            @foreach ($train as $item)
+            <div class="col-12 border">
+                {{$item->azienda}} -
+                {{$item->data_partenza}} -
+                {{$item->orario_partenza}} -
+                {{$item->orario_arrivo}} - 
+                {{$item->codice_treno}} - 
+                {{$item->n_vagone}} - 
+                {{$item->on_time}} - 
+                {{$item->delayed}}
+            </div>
+                
+            @endforeach
+        </div>
+    </div>
 
 </body>
 
 </html>
+
