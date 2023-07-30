@@ -9,3 +9,4 @@ class train extends Model
 {
     use HasFactory;
 }
+ 
